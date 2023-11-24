@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bookImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/app" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bookImageView"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/rounded_corner_with_outline"
+        android:gravity="center"
+        android:hint="Title"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/experienceEditText"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Write your experience/blog"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner_with_outline"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:minLines="5"
+        android:gravity="start|top" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/experienceEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Share"
+        android:textColor="@android:color/white"
+        android:textColorLink="#1D2951" />
+
+
+</RelativeLayout>
